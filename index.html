@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="bg">
+    <div class="logo_content">
+      <h1 class="title">Todo</h1>
+      <a href="#" id="change_theme" class="icon_light">
+        <img id="icon_theme" src="assets/icons/icon-sun.svg" alt="" class="icon_item">
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <form id="form" class="add_todo">
+      <input id="input_value" class="input" type="text" placeholder="Create a new todo...">
+    </form>
+    <ul id="list_container" class="list_container">
+      <li id="list_clone" class="item_list hidden">
+        <div class="container_mark">
+          <a href="#" class="mark">
+            <img src="assets/icons/icon-check.svg" alt="" class="icon_check">
+          </a>
+          <p class="text_todo"></p>
+        </div>
+        <a href="#" class="delete_todo">
+        </a>
+      </li>
+      <div class="content_stats">
+        <div class="todo_stats">
+          <span class="count_todo">0</span>
+          <p class="item_count">items left</p>
+        </div>
+        <div id="todo_content" class="todo_menu">
+          <a href="#" class="item_menu on">All</a>
+          <a href="#" class="item_menu">Active</a>
+          <a href="#" class="item_menu">Completed</a>
+        </div>
+        <a href="#" class="button_clear">Clear Completed</a>
+      </div>
+    </ul>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
